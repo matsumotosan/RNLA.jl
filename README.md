@@ -8,6 +8,6 @@
 A Julia package for randomized numerical linear algebra.
 
 ## Development Status
-- [] Randomized SVD
-- [] Randomized NMF
-- [] Randomized CUR decomposition
+- [ ] Randomized SVD
+- [ ] Randomized NMF
+- [ ] Randomized CUR decomposition
