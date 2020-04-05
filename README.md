@@ -6,3 +6,8 @@
 [![Coveralls](https://coveralls.io/repos/github/matsumotosan/RNLA.jl/badge.svg?branch=master)](https://coveralls.io/github/matsumotosan/RNLA.jl?branch=master)
 
 A Julia package for randomized numerical linear algebra.
+
+## Development Status
+- [] Randomized SVD
+- [] Randomized NMF
+- [] Randomized CUR decomposition

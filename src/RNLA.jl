@@ -1,11 +1,9 @@
 module RNLA
+    using LinearAlgebra
 
-using LinearAlgebra
+    export rsvd
 
-greet() = print("Hello World!")
-
-include("rsvd.jl")
-
-export my_f, rsvd
+    include("rsvd.jl")
+    include("randinit.jl")
 
 end # module
