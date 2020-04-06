@@ -6,7 +6,7 @@ module RNLA
     include("rsvd.jl")
     include("randinit.jl")
     include("rqb.jl")
-    # include("rpca.jl")
+    include("rpca.jl")
     # include("rrpca.jl")
     # include("rid.jl")
     # include("rcur.jl")
