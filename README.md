@@ -1,4 +1,4 @@
-# RNLA
+# RNLA.jl
 
 [![Build Status](https://travis-ci.com/matsumotosan/RNLA.jl.svg?branch=master)](https://travis-ci.com/matsumotosan/RNLA.jl)
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/matsumotosan/RNLA.jl?svg=true)](https://ci.appveyor.com/project/matsumotosan/RNLA-jl)
@@ -10,4 +10,7 @@ A Julia package for randomized numerical linear algebra.
 ## Development Status
 - [ ] Randomized SVD
 - [ ] Randomized NMF
-- [ ] Randomized CUR decomposition
+- [ ] Randomized PCA
+- [ ] Randomzied Robust PCA
+- [ ] Randomized Interpolative Decomposition
+- [ ] Randomized CUR Decomposition

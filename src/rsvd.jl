@@ -1,25 +1,8 @@
-function rsvd(X, r::Int, q::Int=1, p::Int=5, scheme::String="subspace")
-      m, n = size(X)
-      P = randinit(n, r+p)
-      Z = X * P
+# Randomized SVD
 
-      if scheme == "direct"
-            for i = 1:q
-                  Z = X * (X' * Z)
-            end
-      elseif scheme == "subspace"
-            for i = 1:q
-                  Z = X * qr(X' * qr(Z).Q).Q
-            end
-      elseif scheme == "normalized"
-            for i = 1:q
-                  Z = X * lu(X' * lu(Z).L).L
-            end
-      end
-
-      Q = qr(Z).Q
-      Y = Q' * X
-      U, S, V = svd(Y)
-
-      return Q * U, S, V
+function rsvd(X, k::Int, p::Int=1, q::Int=5)
+      Q, B = rqb(X, k, p, q)
+      U, S, Vt = svd(B)
+      
+      return Q * U, S[1:k], Vt[:, 1:k]
 end
