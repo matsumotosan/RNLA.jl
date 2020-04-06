@@ -8,5 +8,7 @@ function rcur(X,
               random::Bool=true)
 
     C, Z, J = rid(X, k, p, q)
-    F = qr(C')
+    F = qr(C', pivot=true)
+    S = F.R
+    P = F.P
 end

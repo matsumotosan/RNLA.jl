@@ -2,11 +2,12 @@
 
 function rid(X,
              k::Int,
-             mode,
              p::Int=10,
-             q::Int=0,
-             idx_only::Bool=false,
-             random::Bool=true)
+             q::Int=0)
 
-    m, n = size(X)
+    Q, B = rqb(X, k, p, q)
+    
+
+
+
 end
