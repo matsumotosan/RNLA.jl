@@ -8,7 +8,7 @@
 A Julia package for randomized numerical linear algebra.
 
 ## Development Status
-###Randomized SVD
+### Randomized SVD
 - [ ] Randomized SVD
 ### Randomized NMF
 - [ ] Hierarchical Alternating Least Squares

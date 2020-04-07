@@ -1,12 +1,12 @@
 # Randomized PCA
 
-function rpca(X::Array{T,2},
-              k::Int,
-              center::Bool=true,
-              retx::Bool=true,
-              p::Int=10,
-              q::Int=2) where {T<:Number}
+function rpca(X,        # (m,n) array
+              k::Int,               # target rank
+              p::Int=10,            # oversampling parameter
+              q::Int=2)             # power iteration parameter
 
     m, n = size(X)
+    U, Σ, W = rsvd(X, k, p, q)
 
+    return W, Σ'Σ ./ (m - 1), U * Σ
 end

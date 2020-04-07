@@ -5,7 +5,8 @@ function rnmf(X::Array{T,2},
               p::Int=5,
               q::Int=1,
               max_iter::Int=1000,
-              tol::Float64=1e-5) where {T<:Number}
+              tol::Float64=1e-5)
+              where T <: Number
 
     m, n = size(X)
     P = rand(n, k + p)

@@ -7,7 +7,8 @@ function rrpca(X::Array{T,2},
                p::Int=10,
                q::Int=2,
                trace::Bool=false,
-               random::Bool=true) where {T<:Number}
+               random::Bool=true)
+               where T <: Number
 
     m, n = size(X)
 end

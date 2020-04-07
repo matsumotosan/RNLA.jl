@@ -8,7 +8,7 @@ using LinearAlgebra
     n = 30
     W = rand(1:100, (m, k))
     H = rand(1:100, (k, n))
-    X = W*H
+    X = W * H
 
     rW, rH = rnmf(X, k)
     @test norm(rW - W) <= sqrt(eps())
