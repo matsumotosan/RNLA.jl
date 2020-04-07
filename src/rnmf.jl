@@ -33,7 +33,7 @@ function HALS!(W, Wr, H, B, k::Int)
     R = B' * Wr
     S = W'W
 
-    updateH!(H, R, k)
+    updateH!(H, R, S, k)
 
     T = B * H'
     V = H * H'
@@ -41,12 +41,17 @@ function HALS!(W, Wr, H, B, k::Int)
     updateWr!(Wr, Q, T, V, Q, k)
 end
 
-function updateH!()
-
+function updateH!(H, R, S, k)
+    for j = 1:k
+        H[j, :] += R[:, j] - H'S[:, j] ./ S[j, j]
+        H[j, H[j, :] < 0] = 0
+    end
 end
 
-function updateWr!()
-
+function updateWr!(Wr, Q, T, V, Q, k)
+    for j = 1:k
+        Wr[]
+    end
 end
 
 function hasConverged()
