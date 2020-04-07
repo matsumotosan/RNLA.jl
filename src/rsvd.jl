@@ -1,8 +1,9 @@
 # Randomized SVD
 
-function rsvd(X, k::Int, p::Int=1, q::Int=5)
+function rsvd(X::Array{T,2}, k::Int, p::Int=1, q::Int=5) where {T<:Number}
     Q, B = rqb(X, k, p, q)
-    U, S, Vt = svd(B)
+    U, S, V = svd(B)
+    U = Q * U
 
-    return Q * U, S[1:k], Vt[:, 1:k]
+    return U[:, 1:k], S[1:k], V[:, 1:k]
 end

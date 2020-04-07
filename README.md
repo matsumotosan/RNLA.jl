@@ -8,8 +8,12 @@
 A Julia package for randomized numerical linear algebra.
 
 ## Development Status
+###Randomized SVD
 - [ ] Randomized SVD
-- [ ] Randomized NMF
+### Randomized NMF
+- [ ] Hierarchical Alternating Least Squares
+- [ ] Regularized Hierarchical Alternating Least Squares
+### Randomized PCA
 - [ ] Randomized PCA
 - [ ] Randomzied Robust PCA
 - [ ] Randomized Interpolative Decomposition
