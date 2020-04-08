@@ -8,5 +8,5 @@ function rpca(X,        # (m,n) array
     m, n = size(X)
     U, Σ, W = rsvd(X, k, p, q)
 
-    return W, Σ'Σ ./ (m - 1), U * Σ
+    return W, (Σ .^ 2) ./ (m - 1), U * Diagonal(Σ)
 end
