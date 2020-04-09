@@ -1,6 +1,4 @@
-using RNLA
-using Test
-using LinearAlgebra
+using RNLA, Test, LinearAlgebra
 
 @testset "rnmf_test1" begin
     m = 50
