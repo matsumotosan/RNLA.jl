@@ -10,16 +10,26 @@ A Julia package for randomized numerical linear algebra.
 ## Development Status
 - [x] Randomized SVD
 - [x] Randomized PCA
-- [ ] Randomzied Robust PCA
+- [ ] Randomized Robust PCA
+- [ ] Randomized Nonlinear PCA
 - [ ] Randomized ICA
 - [ ] Randomized CCA
-- [ ] Randomized Nonlinear Component Analysis
-- [ ] Randomized Interpolative Decomposition
-- [ ] Randomized CUR Decomposition
+- [ ] Randomized Nonlinear CCA
 - [ ] Randomized NMF - Hierarchical Alternating Least Squares
 - [ ] Randomized NMF - Regularized Hierarchical Alternating Least Squares
+- [ ] Randomized Interpolative Decomposition
+- [ ] Randomized CUR Decomposition
+- [ ] Randomized DMD
 
 ## References
 [Randomized Matrix Decompositions Using R](https://arxiv.org/pdf/1608.02148.pdf)
 
 [Randomized Nonnegative Matrix Factorization](https://arxiv.org/pdf/1711.02037.pdf)
+
+[Randomized Independent Component Analysis](https://arxiv.org/pdf/1609.06942.pdf)
+
+[Randomized Canonical Correlation Analysis](https://arxiv.org/pdf/1411.3409.pdf)
+
+[Randomized Nonlinear Component Analysis](https://arxiv.org/pdf/1402.0119.pdf)
+
+[Randomized Dynamic Mode Decomposition](https://arxiv.org/pdf/1702.02912.pdf)
