@@ -5,7 +5,7 @@
 [![Codecov](https://codecov.io/gh/matsumotosan/RNLA.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/matsumotosan/RNLA.jl)
 [![Coveralls](https://coveralls.io/repos/github/matsumotosan/RNLA.jl/badge.svg?branch=master)](https://coveralls.io/github/matsumotosan/RNLA.jl?branch=master)
 
-A Julia package for randomized numerical linear algebra.
+Julia implementations of various randomized numerical linear algebra algorithms.
 
 ## Development Status
 - [x] Randomized SVD
